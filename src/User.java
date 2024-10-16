@@ -1,7 +1,6 @@
 public class User {
     String nickname;
     String password;
-
     public User(String nickname, String password) {
         this.nickname = nickname;
         this.password = password;
@@ -22,4 +21,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 }

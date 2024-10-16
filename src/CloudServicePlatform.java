@@ -8,10 +8,11 @@ public class CloudServicePlatform {
             System.out.println("Connect to Microsoft Azure");
             // Logic
         }else{
-            System.out.println("Connect to Google Cloud");
+            System.out.println("Connect to Google Cloud");          
             // Logic
-        }
+        }                                                           
     }
     // More Methods
 }
-
+//INTERFACE SEGREGATION PRINCIPLE 
+// DEJAR LA CLASE CLOUDSERVICEPLATFORM COMO INTERFAZ CON LA FUNCION HOSTINGTO Y CREAR SUBCLASES PARA AWS, MICROSOFT AZURE, GOOGLE CLOUD 
