@@ -1,6 +1,6 @@
-public class CloudServicePlatform {
-    private int cloudServicePlatform;
-    public void hostingTo (AppWeb app) {
+public interface CloudServicePlatform {
+    public void hostingTo (AppWeb app);
+    /*public void hostingTo (AppWeb app) {
         if (cloudServicePlatform==1) {
             System.out.println("Connect to AWS");
             // Logic
@@ -13,6 +13,8 @@ public class CloudServicePlatform {
         }                                                           
     }
     // More Methods
+         */
 }
 //INTERFACE SEGREGATION PRINCIPLE 
-// DEJAR LA CLASE CLOUDSERVICEPLATFORM COMO INTERFAZ CON LA FUNCION HOSTINGTO Y CREAR SUBCLASES PARA AWS, MICROSOFT AZURE, GOOGLE CLOUD 
+// DEJAR LA CLASE CLOUDSERVICEPLATFORM COMO INTERFAZ CON LA FUNCION HOSTINGTO Y CREAR SUBCLASES PARA AWS, MICROSOFT AZURE, GOOGLE CLOUD QUE IMPLEMENTEN DICHA INTERFAZ
+//CloudServicePlatform class using strategy pattern (OCP)
